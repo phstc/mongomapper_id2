@@ -1,3 +1,4 @@
+# http://asciicasts.com/episodes/245-new-gem-with-bundler
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 require "mongomapper_id2/version"

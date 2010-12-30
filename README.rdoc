@@ -1,0 +1,59 @@
+= mongomapper_id2
+
+mongomapper_id2 add auto incremented id for your models
+
+  movie = Movie.create(:title => 'The Simpsons Movie')
+  movie.id # BSON::ObjectId('4d1d150d30f2246bc6000001') 
+  # He is the mongomapper_id2
+  movie.id2 # 1
+  
+  movie2 = Movie.create(:title => 'Pirates of Silicon Valley')
+  movie2.id2 # 2
+
+With mongomapper_id2 you can get base62 for the id2. It's good to generate short urls
+
+  movie = Movie.create(:title => 'Tropa de Elite')
+  movie.id # BSON::ObjectId('4d1d150d30f2246bc6000001') 
+  movie.id2 # 3
+  movie.to_base62 # d
+
+Example
+   
+  # app/helpers/application_helper.rb
+  def get_short_url model
+	"http://pablocantero.com/#{model.class.name.downcase}/#{model.to_base62}"
+  end
+
+== Installation
+
+  # https://rubygems.org/gems/mongomapper_id2
+  sudo gem install mongomapper_id2
+
+=== Adding mongomapper_id2 to your project
+
+=== Adding gem
+
+  # Gemfile
+  gem 'mongomapper_id2'
+
+=== Adding mongomapper_id2 initializer
+
+  # config/initializers/mongomapper_id2.rb
+  require 'mongomapper_id2'
+
+=== Adding mongomapper_id2 in a model
+
+  # app/models/movie.rb
+  class Movie
+    include MongoMapper::Document
+    
+    key :title, String 
+    # Here is the mongomapper_id2
+    auto_increment!
+  end
+
+== Do you want to improve mongomapper_id2
+
+You’re welcome to make your contributions and send them as a pull request or just send me a message pablocantero.com/blog/contato/
+
+Copyright (c) 2010 Pablo Cantero, released under the MIT license
