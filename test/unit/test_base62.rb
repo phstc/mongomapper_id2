@@ -6,12 +6,12 @@ require 'mongomapper_id2'
 class Base62Test < Test::Unit::TestCase
 
   context "encoding" do
-    setup do
-      @klass = Doc do
-        key :title, String
-      end
-      @klass.auto_increment!
-    end
+    # setup do
+    #   @klass = Doc do
+    #     key :title, String
+    #   end
+    #   @klass.auto_increment!
+    # end
 
     should "Base62 encode" do
       # 1
