@@ -23,7 +23,7 @@ With mongomapper_id2 you can get base62 for the id2. It's good to generate short
   movie.id2 # 3
   movie.to_base62 # d
 
-=== Example
+=== Short url Example
    
   # app/helpers/application_helper.rb
   def get_short_url model
@@ -35,7 +35,7 @@ With mongomapper_id2 you can get base62 for the id2. It's good to generate short
   # https://rubygems.org/gems/mongomapper_id2
   sudo gem install mongomapper_id2
 
-=== Adding mongomapper_id2 to your project
+=== Adding mongomapper_id2
 
 === Adding gem
 
