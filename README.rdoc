@@ -8,7 +8,7 @@ mongomapper_id2 adds auto incremented id for your models
 
   movie = Movie.create(:title => 'The Simpsons Movie')
   movie.id # BSON::ObjectId('4d1d150d30f2246bc6000001') 
-  # He is the mongomapper_id2
+  # Here is the mongomapper_id2
   movie.id2 # 1
   
   movie2 = Movie.create(:title => 'Pirates of Silicon Valley')
