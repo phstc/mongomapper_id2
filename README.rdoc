@@ -1,6 +1,6 @@
 = mongomapper_id2
 
-It's a MongoMapper plugin to add auto incremented id and to_base62 (short url) for your models
+It’s a MongoMapper' plugin to add auto incremented id and to_base62 (short url) for your models
 
 This gem is inspired in this blog post http://ihswebdesign.com/blog/autoincrement-in-mongodb-with-ruby/
 
