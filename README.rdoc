@@ -7,7 +7,7 @@ This gem is inspired in this blog post http://ihswebdesign.com/blog/autoincremen
 == Installation
 
   # https://rubygems.org/gems/mongomapper_id2
-  sudo gem install mongomapper_id2
+  $ sudo gem install mongomapper_id2
 
 === Adding mongomapper_id2 gem
 
@@ -61,6 +61,16 @@ With mongomapper_id2 you can get base62 for the id2. It's good to generate short
 You’re welcome to make your contributions and send them as a pull request
 
 http://pablocantero.com/blog/contato/
+
+=== Development
+
+  $ gem install bundler (if you don't have it)
+  $ bundle install
+  $ bundle exec rake
+
+==== Test
+
+  $ rake test
 
 == Copyright
 
