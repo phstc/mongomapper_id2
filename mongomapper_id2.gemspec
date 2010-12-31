@@ -11,7 +11,6 @@ Gem::Specification.new do |s|
   s.email       = ["pablo@pablocantero"]
   s.homepage    = "https://github.com/phstc/mongomapper_id2"
   s.summary     = %q{Auto increment id and short url generator for MongoMapper}
-  s.description = %q{See on GitHub https://github.com/phstc/mongomapper_id2}
 
   s.rubyforge_project = "mongomapper_id2"
   

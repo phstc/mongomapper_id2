@@ -1,10 +1,36 @@
 = mongomapper_id2
 
+It's a MongoMapper plugin to add auto incremented id and to_base62 (short url) for your models
+
 This gem is inspired in this blog post http://ihswebdesign.com/blog/autoincrement-in-mongodb-with-ruby/
 
-== Auto increment id2
+== Installation
 
-mongomapper_id2 adds auto incremented id for your models
+  # https://rubygems.org/gems/mongomapper_id2
+  sudo gem install mongomapper_id2
+
+=== Adding mongomapper_id2 gem
+
+  # Gemfile
+  gem 'mongomapper_id2'
+
+=== Adding mongomapper_id2 initializer
+
+  # config/initializers/mongomapper_id2.rb
+  require 'mongomapper_id2'
+
+=== Adding mongomapper_id2 in a model
+
+  # app/models/movie.rb
+  class Movie
+    include MongoMapper::Document
+    
+    key :title, String 
+    # Here is the mongomapper_id2
+    auto_increment!
+  end
+
+== Usage
 
   movie = Movie.create(:title => 'The Simpsons Movie')
   movie.id # BSON::ObjectId('4d1d150d30f2246bc6000001') 
@@ -30,36 +56,12 @@ With mongomapper_id2 you can get base62 for the id2. It's good to generate short
 	"http://pablocantero.com/#{model.class.name.downcase}/#{model.to_base62}"
   end
 
-== Installation
-
-  # https://rubygems.org/gems/mongomapper_id2
-  sudo gem install mongomapper_id2
-
-=== Adding mongomapper_id2
-
-=== Adding gem
-
-  # Gemfile
-  gem 'mongomapper_id2'
-
-=== Adding mongomapper_id2 initializer
-
-  # config/initializers/mongomapper_id2.rb
-  require 'mongomapper_id2'
-
-=== Adding mongomapper_id2 in a model
-
-  # app/models/movie.rb
-  class Movie
-    include MongoMapper::Document
-    
-    key :title, String 
-    # Here is the mongomapper_id2
-    auto_increment!
-  end
-
 == Do you want to improve mongomapper_id2
 
-You’re welcome to make your contributions and send them as a pull request or just send me a message pablocantero.com/blog/contato/
+You’re welcome to make your contributions and send them as a pull request
 
-Copyright (c) 2010 Pablo Cantero, released under the MIT license
+http://pablocantero.com/blog/contato/
+
+== Copyright
+
+See LICENSE for details
