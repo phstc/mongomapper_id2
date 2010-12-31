@@ -60,7 +60,7 @@ With mongomapper_id2 you can get base62 for the id2. It's good to generate short
 
 You’re welcome to make your contributions and send them as a pull request
 
-http://pablocantero.com/blog/contato/
+http://pablocantero.com/blog/contato
 
 === Development
 
