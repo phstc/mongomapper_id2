@@ -4,7 +4,7 @@ This gem is inspired in this blog post http://ihswebdesign.com/blog/autoincremen
 
 == Auto increment id2
 
-mongomapper_id2 add auto incremented id for your models
+mongomapper_id2 adds auto incremented id for your models
 
   movie = Movie.create(:title => 'The Simpsons Movie')
   movie.id # BSON::ObjectId('4d1d150d30f2246bc6000001') 
