@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'incrementor'
 
-describe Incrementor do
+describe MongomapperId2::Incrementor do
 
   it 'should increment' do
     pending "add some examples to (or delete) #{__FILE__}"
