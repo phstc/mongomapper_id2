@@ -19,7 +19,7 @@ This gem is inspired in this blog post http://ihswebdesign.com/blog/autoincremen
   # config/initializers/mongomapper_id2.rb
   require 'mongomapper_id2'
 
-=== Adding mongomapper_id2 in a model
+=== Adding mongomapper_id2 in a document
 
   # app/models/movie.rb
   class Movie
