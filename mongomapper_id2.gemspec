@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Pablo Cantero"]
   s.email       = ["pablo@pablocantero"]
   s.homepage    = "https://github.com/phstc/mongomapper_id2"
-  s.summary     = %q{It’s a MongoMapper' plugin to add auto incremented id and to_base62 (short url) for your models}
+  s.summary     = %q{It’s a MongoMapper plugin to add auto incremented id and to_base62 (short url) for your models}
 
   s.rubyforge_project = "mongomapper_id2"
   
