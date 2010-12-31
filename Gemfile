@@ -1,6 +1,9 @@
-source "http://rubygems.org"
+gemspec
 
-group :test do
-  gem 'rspec'
-  # gem 'mocha'
-end
+gem 'bson_ext', '~> 1.1'
+
+gem 'i18n'
+gem 'tzinfo'
+gem 'activemodel'
+
+gem 'mongo_mapper'

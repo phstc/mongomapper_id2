@@ -1,3 +1,12 @@
-pkg/*
+*.sw?
+.DS_Store
+coverage
+rdoc
+pkg
+*~
 *.gem
+tmp
+log
+.yardoc
+doc
 .bundle
