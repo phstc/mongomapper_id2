@@ -17,7 +17,6 @@ class AutoIncrementTest < Test::Unit::TestCase
       doc.id2.should be(nil)
       doc.save      
       doc.id2.should_not be(nil)
-      doc.to_base62.should_not be(nil)
       id2 = doc.id2
       doc.save
       doc.id2.should eql id2
@@ -29,7 +28,6 @@ class AutoIncrementTest < Test::Unit::TestCase
       doc2 = @klass.new(:title => 'Tropa de Elite')
       doc2.save
       (doc.id2 + 1).should eql doc2.id2
-      doc.to_base62.should_not eql doc2.to_base62
     end
   end
 end

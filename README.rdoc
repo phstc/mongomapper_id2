@@ -1,6 +1,6 @@
 = mongomapper_id2
 
-It’s a MongoMapper plugin to add auto incremented id and to_base62 (short url) for your MongoMapper documents
+It’s a MongoMapper plugin to add auto incremented id to your MongoMapper documents
 
 This gem is inspired in this blog post http://ihswebdesign.com/blog/autoincrement-in-mongodb-with-ruby/
 
@@ -13,11 +13,6 @@ This gem is inspired in this blog post http://ihswebdesign.com/blog/autoincremen
 
   # Gemfile
   gem 'mongomapper_id2'
-
-=== Adding mongomapper_id2 initializer
-
-  # config/initializers/mongomapper_id2.rb
-  require 'mongomapper_id2'
 
 === Adding mongomapper_id2 in a document
 
@@ -39,22 +34,6 @@ This gem is inspired in this blog post http://ihswebdesign.com/blog/autoincremen
   
   movie2 = Movie.create(:title => 'Pirates of Silicon Valley')
   movie2.id2 # 2
-
-== Base62 id2
-
-With mongomapper_id2 you can get base62 for the id2. It's good to generate short urls
-
-  movie = Movie.create(:title => 'Tropa de Elite')
-  movie.id # BSON::ObjectId('4d1d150d30f2246bc6000001') 
-  movie.id2 # 3
-  movie.to_base62 # d
-
-=== Short url example
-   
-  # app/helpers/application_helper.rb
-  def get_short_url model
-	"http://pablocantero.com/#{model.class.name.downcase}/#{model.to_base62}"
-  end
 
 == Do you want to improve mongomapper_id2
 

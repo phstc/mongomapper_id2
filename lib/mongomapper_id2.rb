@@ -1,4 +1,3 @@
-require 'base62'
 require 'incrementor'
 
 module MongomapperId2
@@ -16,9 +15,6 @@ module MongoMapper
         end
       end
       module InstanceMethods
-        def to_base62
-          MongomapperId2::Base62.encode(self.id2) unless self.id2.nil?
-        end
         private
         def update_auto_increment
           self.id2 = MongomapperId2::Incrementor[self.class.name].inc
