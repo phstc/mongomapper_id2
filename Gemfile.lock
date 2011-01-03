@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mongomapper_id2 (0.0.2)
+    mongomapper_id2 (0.0.3)
       activesupport (>= 2.3.4)
       jnunemaker-validatable (~> 1.8.4)
       mongo_mapper
