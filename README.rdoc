@@ -37,7 +37,7 @@ This gem is inspired in this blog post http://ihswebdesign.com/blog/autoincremen
 
 == Overriding the default id
 
-If you want to override the default, just add the option ":override => true"
+If you want to override the default id, just add the option ":override => true"
 
   # app/models/movie.rb
   class Movie
