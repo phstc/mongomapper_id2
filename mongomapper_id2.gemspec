@@ -16,16 +16,16 @@ Gem::Specification.new do |s|
   
   
   s.add_dependency 'mongo_mapper' #,            '>= 0.8.6'
-  s.add_dependency 'activesupport',           '>= 2.3.4'
-  s.add_dependency 'jnunemaker-validatable',  '~> 1.8.4'
-  s.add_dependency 'plucky',                  '~> 0.3.6'
+  # s.add_dependency 'activesupport',           '>= 2.3.4'
+  # s.add_dependency 'jnunemaker-validatable',  '~> 1.8.4'
+  # s.add_dependency 'plucky',                  '~> 0.3.8'
 
-  s.add_development_dependency 'json'
+  # s.add_development_dependency 'json'
   s.add_development_dependency 'log_buddy'
-  s.add_development_dependency 'jnunemaker-matchy', '~> 0.4.0'
-  s.add_development_dependency 'shoulda',           '~> 2.11'
-  s.add_development_dependency 'timecop',           '~> 0.3.1'
-  s.add_development_dependency 'mocha',             '~> 0.9.8'
+  s.add_development_dependency 'jnunemaker-matchy' # , '~> 0.4.0'
+  s.add_development_dependency 'shoulda' # ,           '~> 2.11'
+  s.add_development_dependency 'timecop' # ,           '~> 0.3.1'
+  s.add_development_dependency 'mocha' # ,             '~> 0.9.8'
   
   s.files             = Dir.glob("{bin,examples,lib,rails,test}/**/*") + %w[LICENSE README.rdoc]
   s.executables       = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }

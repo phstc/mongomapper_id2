@@ -1,59 +1,47 @@
 PATH
   remote: .
   specs:
-    mongomapper_id2 (0.0.3)
-      activesupport (>= 2.3.4)
-      jnunemaker-validatable (~> 1.8.4)
+    mongomapper_id2 (0.0.4)
       mongo_mapper
-      plucky (~> 0.3.6)
 
 GEM
   specs:
-    activemodel (3.0.3)
-      activesupport (= 3.0.3)
+    activemodel (3.0.7)
+      activesupport (= 3.0.7)
       builder (~> 2.1.2)
-      i18n (~> 0.4)
-    activesupport (3.0.3)
-    bson (1.1.5)
-    bson_ext (1.1.5)
+      i18n (~> 0.5.0)
+    activesupport (3.0.7)
+    bson (1.3.1)
+    bson_ext (1.3.1)
     builder (2.1.2)
     i18n (0.5.0)
     jnunemaker-matchy (0.4.0)
-    jnunemaker-validatable (1.8.4)
-      activesupport (>= 2.3.4)
-    json (1.4.6)
     log_buddy (0.5.0)
-    mocha (0.9.10)
-      rake
-    mongo (1.1.5)
-      bson (>= 1.1.5)
-    mongo_mapper (0.8.6)
-      activesupport (>= 2.3.4)
-      jnunemaker-validatable (~> 1.8.4)
-      plucky (~> 0.3.6)
-    plucky (0.3.6)
-      mongo (~> 1.1)
-    rake (0.8.7)
+    mocha (0.9.12)
+    mongo (1.3.1)
+      bson (>= 1.3.1)
+    mongo_mapper (0.9.1)
+      activemodel (~> 3.0)
+      activesupport (~> 3.0)
+      plucky (~> 0.3.8)
+    plucky (0.3.8)
+      mongo (~> 1.3)
     shoulda (2.11.3)
     timecop (0.3.5)
-    tzinfo (0.3.23)
+    tzinfo (0.3.27)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activemodel
-  activesupport (>= 2.3.4)
-  bson_ext (~> 1.1)
+  bson_ext
   i18n
-  jnunemaker-matchy (~> 0.4.0)
-  jnunemaker-validatable (~> 1.8.4)
-  json
+  jnunemaker-matchy
   log_buddy
-  mocha (~> 0.9.8)
+  mocha
   mongo_mapper
   mongomapper_id2!
-  plucky (~> 0.3.6)
-  shoulda (~> 2.11)
-  timecop (~> 0.3.1)
+  shoulda
+  timecop
   tzinfo
