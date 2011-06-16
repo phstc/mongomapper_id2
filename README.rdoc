@@ -35,6 +35,24 @@ This gem is inspired in this blog post http://ihswebdesign.com/blog/autoincremen
   movie2 = Movie.create(:title => 'Pirates of Silicon Valley')
   movie2.id2 # 2
 
+== Overriding the default id
+
+If you want to override the default, just add ":override => true" option
+
+  # app/models/movie.rb
+  class Movie
+    include MongoMapper::Document
+  
+    key :title, String 
+    # Here is the mongomapper_id2
+    auto_increment! :override => true
+  end
+
+Activating this option the default id will be replaced by an auto incremented id
+
+  movie = Movie.create(:title => 'Pirates of Silicon Valley')
+  movie.id # 1
+
 == Do you want to improve mongomapper_id2
 
 You’re welcome to make your contributions and send them as a pull request
