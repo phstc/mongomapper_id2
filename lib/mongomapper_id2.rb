@@ -18,7 +18,6 @@ module MongoMapper
       module InstanceMethods
         private
         def update_auto_increment
-          puts 'VSF2---'
           self.id2 = MongomapperId2::Incrementor[self.class.name].inc
         end
         def update_auto_increment_override
