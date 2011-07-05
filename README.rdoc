@@ -2,7 +2,7 @@
 
 It’s a MongoMapper’s plugin to add auto incremented id in MongoMapper’s documents.
 
-This gem was inspired by this post http://ihswebdesign.com/blog/autoincrement-in-mongodb-with-ruby/
+This gem was based on this post http://ihswebdesign.com/blog/autoincrement-in-mongodb-with-ruby/
 
 == Installation
 
