@@ -57,8 +57,6 @@ Activating this option the default id will be replaced by an auto incremented id
 
 You’re welcome to make your contributions and send them as a pull request
 
-http://pablocantero.com/blog/contato
-
 === Development
 
   $ gem install bundler (if you don't have it)
