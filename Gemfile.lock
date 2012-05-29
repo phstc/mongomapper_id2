@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mongomapper_id2 (0.0.4)
+    mongomapper_id2 (0.0.5)
       mongo_mapper
 
 GEM
