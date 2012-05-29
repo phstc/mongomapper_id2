@@ -15,19 +15,16 @@ module MongoMapper
           end
         end
       end
-      module InstanceMethods
-        private
-        def update_auto_increment
-          self.id2 = MongomapperId2::Incrementor[self.class.name].inc
-        end
-        def update_auto_increment_override
-          update_auto_increment
-          self.id = self.id2.to_s
-        end
+      private
+      def update_auto_increment
+        self.id2 = MongomapperId2::Incrementor[self.class.name].inc
+      end
+      def update_auto_increment_override
+        update_auto_increment
+        self.id = self.id2.to_s
       end
     end
   end
 end
 
 MongoMapper::Document.plugin(MongoMapper::Plugins::AutoIncrement)
-# MongoMapper::EmbeddedDocument.plugin(MongoMapper::Plugins::AutoIncrement)
